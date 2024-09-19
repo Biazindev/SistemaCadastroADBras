@@ -1,18 +1,15 @@
 import { BrowserRouter } from "react-router-dom"
-import Rotas from "./routes"
-import { Provider } from "react-redux"
 
 import { GlobalCss } from "./styles"
+import Contato from "./components/Contato"
 
 function App() {
   return (
     
-    <>
       <BrowserRouter>
         <GlobalCss />
-        <Rotas />
+        <Contato />
       </BrowserRouter>
-    </>
   )
 }
 
