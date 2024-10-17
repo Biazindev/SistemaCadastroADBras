@@ -61,7 +61,32 @@ const Contato = () => {
         },
         validationSchema: validationSchema,
         onSubmit: (values) => {
-            const mailtoLink = `mailto:adbrassfs@gmail.com?subject=Contato de ${values.nome}&body=Nome: ${values.nome}%0AEmail: ${values.email}%0ATelefone: ${values.telefone}%0AMensagem: ${values.mensagem}`
+            const mailtoLink = `mailto:adbrassfs@gmail.com?subject=Ficha de Cadastro: 
+            ${values.nome}&body=Nome: ${values.nome}
+            %0AData de Nascimento: ${values.dataNascimento}
+            %0ASexo: ${values.sexo}
+            %0AEstado Civil: ${values.estadoCivel}
+            %0AData de casamento: ${values.dataCasamento}
+            %0ANome do conjugue: ${values.nomeConjugue}
+            %0ANome do Pai: ${values.nomePai}
+            %0ANome da Mãe: ${values.nomeMae}
+            %0ARG: ${values.rg}
+            %0ACPF: ${values.cpf}
+            %0ACEP: ${values.cep}
+            %0AEndereço: ${values.endereco}
+            %0ANúmero: ${values.numero}
+            %0ABairro: ${values.bairro}
+            %0AUF: ${values.uf}
+            %0ACidade: ${values.cidade}
+            %0AData de batismo: ${values.dataBatismo}
+            %0AData da Consagração: ${values.dataOrdenacao}
+            %0AEscolaridade: ${values.escolaridade}
+            %0ABatizado com Espírito Santo: ${values.batismoEspiritoSanto}
+            %0AEmail: ${values.email}
+            %0ATelefone: ${values.telefone}
+            %0AMensagem: ${values.mensagem}
+            
+            `
             window.location.href = mailtoLink
         }
     })
