@@ -61,7 +61,7 @@ const Contato = () => {
         },
         validationSchema: validationSchema,
         onSubmit: (values) => {
-            const mailtoLink = `mailto:tiago.biazin02@gmail.com?subject=Contato de ${values.nome}&body=Nome: ${values.nome}%0AEmail: ${values.email}%0ATelefone: ${values.telefone}%0AMensagem: ${values.mensagem}`
+            const mailtoLink = `mailto:adbrassfs@gmail.com?subject=Contato de ${values.nome}&body=Nome: ${values.nome}%0AEmail: ${values.email}%0ATelefone: ${values.telefone}%0AMensagem: ${values.mensagem}`
             window.location.href = mailtoLink
         }
     })
@@ -96,7 +96,7 @@ const Contato = () => {
             })
             return
         }
-        const whatsappLink = `https://api.whatsapp.com/send?phone=5517981716648&text=Nome: ${formik.values.nome}
+        const whatsappLink = `https://api.whatsapp.com/send?phone=5517981889505&text=Nome: ${formik.values.nome}
         %0AData de nascimento: ${formik.values.dataNascimento}
         %0AEstado Civel: ${formik.values.estadoCivel}
         %0AData de Casamento: ${formik.values.dataCasamento}
@@ -379,7 +379,7 @@ const Contato = () => {
                     <li>
                     <input
                             type="text"
-                            name="batismoEspiritoSanto:"
+                            name="batismoEspiritoSanto"
                             placeholder="Batizado com Espírito Santo?"
                             value={formik.values.batismoEspiritoSanto}
                             onChange={formik.handleChange}
